@@ -30,7 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Ian's blog" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 
@@ -413,75 +414,81 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
+                        <div class="article-tag">
+                            
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">
+                                        hexo
+                                    </span>
+                                </a>
+                                
+                        </div>
                         
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
-                            </a>
-                        
-                    </div>
-                    
                 </div>
                 <div class="col s5 right-align">
                     
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        <div class="post-cate">
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                                <a href="/categories/%E6%80%BB%E7%BB%93/" class="post-category">
+                                    总结
+                                </a>
+                                
+                        </div>
                         
-                            <a href="/categories/%E6%80%BB%E7%BB%93/" class="post-category">
-                                总结
-                            </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
 
             <div class="post-info">
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-09
-                </div>
-                
+                    <div class="post-date info-break-policy">
+                        <i class="far fa-calendar-minus fa-fw"></i>
+                        发布日期:&nbsp;&nbsp;
+                            2021-12-09
+                    </div>
+                    
 
-                
+                        
 
-                
-                <div class="info-break-policy">
-                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
-                </div>
-                
+                                
+                                    <div class="info-break-policy">
+                                        <i class="far fa-file-word fa-fw"></i>
+                                        文章字数:&nbsp;&nbsp;
+                                            1.2k
+                                    </div>
+                                    
 
-                
-                <div class="info-break-policy">
-                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
-                </div>
-                
+                                        
+                                            <div class="info-break-policy">
+                                                <i class="far fa-clock fa-fw"></i>
+                                                阅读时长:&nbsp;&nbsp;
+                                                    4
+                                                        分
+                                            </div>
+                                            
 
-                
+                                                
             </div>
         </div>
         <hr class="clearfix">
 
         
 
-        
+                
 
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <p>hexo本质上是将markdown文件通过一系列规则渲染成HTML网页格式并发布到远端服务器的集成工具</p>
+                        <div class="card-content article-card-content">
+                            <div id="articleContent">
+                                <p>hexo本质上是将markdown文件通过一系列规则渲染成HTML网页格式并发布到远端服务器的集成工具</p>
 <h2 id="符号解释"><a href="#符号解释" class="headerlink" title="符号解释"></a>符号解释</h2><p><code>[a]</code>表示<code>a</code>是可以缺省的，此时会以默认值代替</p>
 <p><code>&lt;b&gt;</code>表示该位置是可变的，<code>b</code>是该部分应填的内容名称，不可缺省</p>
-<h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><h3 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h3><pre class=" language-highlight shell"><span class="meta">#</span><span class="bash"><code class="language-highlight shell"><span class="meta">#</span><span class="bash"> 简写</span>
+<h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><h3 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h3><pre class="line-numbers language-shell"><code class="language-shell"># 简写
 hexo n [layout] <title>
-<span class="meta">#</span><span class="bash"> 全写</span>
+# 全写
 hexo new [layout] <title>
-<span class="meta">#</span><span class="bash"> 示例</span>
-<span class="meta">#</span><span class="bash"> 此命令会在_post文件夹新建一个me.md</span>
-hexo n "me"</code></pre>
-
+# 示例
+# 此命令会在_post文件夹新建一个me.md
+hexo n "me"
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>该命令会以<code>layout</code>布局新建一个名为<code>title</code>的 文章，如果<code>layout</code>缺省，默认为<code>post</code>。标题的引号不是必须的，如果标题包含空格，则必须用引号括起来。</p>
 <p><code>layout</code>包含三种默认布局(post, page, draft)和自定义布局，三种默认布局的模板文件都存在<code>scaffolds</code>文件夹中，新建文章时，hexo会按照指定布局模板的文件内容来填充新建的文件。</p>
 <ul>
@@ -509,15 +516,15 @@ hexo n "me"</code></pre>
 <td>文章的Slug，作为新文章的文件名和发布后的 URL</td>
 </tr>
 </tbody></table>
-<pre class=" language-highlight shell"><span class="meta">#</span><span class="bash"><code class="language-highlight shell"><span class="meta">#</span><span class="bash"> -p用法</span>
-<span class="meta">#</span><span class="bash"> 该命令会在<span class="built_in">source</span>/about下创建一个me.md，同时文章的标题被设为About me</span>
-hexo new page -p about/me "About me"</code></pre>
-
-<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><h3 id="基础用法-1"><a href="#基础用法-1" class="headerlink" title="基础用法"></a>基础用法</h3><pre class=" language-highlight shell"><span class="meta">#</span><span class="bash"><code class="language-highlight shell"><span class="meta">#</span><span class="bash"> 简写</span>
+<pre class="line-numbers language-shell"><code class="language-shell"># -p用法
+# 该命令会在source/about下创建一个me.md，同时文章的标题被设为About me
+hexo new page -p about/me "About me"
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><h3 id="基础用法-1"><a href="#基础用法-1" class="headerlink" title="基础用法"></a>基础用法</h3><pre class="line-numbers language-shell"><code class="language-shell"># 简写
 hexo g
-<span class="meta">#</span><span class="bash"> 全写</span>
-hexo generate</code></pre>
-
+# 全写
+hexo generate
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>生成静态页面文件，发布博客必需步骤</p>
 <h3 id="选项-1"><a href="#选项-1" class="headerlink" title="选项"></a>选项</h3><table>
 <thead>
@@ -547,14 +554,14 @@ hexo generate</code></pre>
 <td>最大同时生成文件的数量，默认无限制</td>
 </tr>
 </tbody></table>
-<h2 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h2><pre class=" language-highlight shell"><code class="language-highlight shell">hexo publish [layout] <filename></code></pre>
-
+<h2 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h2><pre class="line-numbers language-shell"><code class="language-shell">hexo publish [layout] <filename>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>发表草稿，还没用过</p>
-<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><h3 id="基础用法-2"><a href="#基础用法-2" class="headerlink" title="基础用法"></a>基础用法</h3><pre class=" language-highlight shell"><span class="meta">#</span><span class="bash"><code class="language-highlight shell"><span class="meta">#</span><span class="bash"> 简写</span>
+<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><h3 id="基础用法-2"><a href="#基础用法-2" class="headerlink" title="基础用法"></a>基础用法</h3><pre class="line-numbers language-shell"><code class="language-shell"># 简写
 hexo s
-<span class="meta">#</span><span class="bash"> 全写</span>
-hexo server</code></pre>
-
+# 全写
+hexo server
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>启动服务器进行本地预览。默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
 <p>最常用命令，其实可以在不进行<code>hexo g</code>的情况下使用，可以动态监视改动并刷新页面。</p>
 <h3 id="选项-2"><a href="#选项-2" class="headerlink" title="选项"></a>选项</h3><table>
@@ -577,11 +584,11 @@ hexo server</code></pre>
 <td>启动log记录修改，使用覆盖记录格式</td>
 </tr>
 </tbody></table>
-<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><h3 id="基础用法-3"><a href="#基础用法-3" class="headerlink" title="基础用法"></a>基础用法</h3><pre class=" language-highlight shell"><span class="meta">#</span><span class="bash"><code class="language-highlight shell"><span class="meta">#</span><span class="bash"> 简写</span>
+<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><h3 id="基础用法-3"><a href="#基础用法-3" class="headerlink" title="基础用法"></a>基础用法</h3><pre class="line-numbers language-shell"><code class="language-shell"># 简写
 hexo d
-<span class="meta">#</span><span class="bash"> 全写</span>
-hexo deploy</code></pre>
-
+# 全写
+hexo deploy
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>将页面部署到远程网站，发布博客必需步骤</p>
 <h3 id="选项-3"><a href="#选项-3" class="headerlink" title="选项"></a>选项</h3><table>
 <thead>
@@ -597,18 +604,18 @@ hexo deploy</code></pre>
 </tbody></table>
 <h2 id="render"><a href="#render" class="headerlink" title="render"></a>render</h2><p>没用过，以后再说</p>
 <h2 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h2><p>没用过，以后再说</p>
-<h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><pre class=" language-highlight shell"><span class="meta">#</span><span class="bash"><code class="language-highlight shell"><span class="meta">#</span><span class="bash"> 简写</span>
+<h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><pre class="line-numbers language-shell"><code class="language-shell"># 简写
 hexo cl
-<span class="meta">#</span><span class="bash"> 全写</span>
-hexo clean</code></pre>
-
+# 全写
+hexo clean
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>清除缓存文件，删除<code>public</code>文件夹</p>
 <p>总之发现更改不生效先试试<code>hexo clean</code>和删除浏览器缓存，还不行就删了<code>deploy.git</code>文件夹。以及发布是有延迟的，有时候等一会就好了。</p>
-<h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><pre class=" language-highlight shell"><span class="meta">#</span><span class="bash"><code class="language-highlight shell"><span class="meta">#</span><span class="bash"> 简写</span>
+<h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><pre class="line-numbers language-shell"><code class="language-shell"># 简写
 hexo l <type>
-<span class="meta">#</span><span class="bash"> 全写</span>
-hexo list <type></code></pre>
-
+# 全写
+hexo list <type>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>列出网站资料，其中<code>&lt;type&gt;</code>可以是 <code>page</code>,<code> post</code>, <code>route</code>, <code>tag</code>, <code>category</code></p>
 <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>在点进详情页前的预览界面会显示固定长度的字符，使用<code>&lt;!-- more --&gt;</code>来界定摘要和正文</p>
 <p><code>&lt;!-- more --&gt;</code>前的正文内容会在首页看到，其后的内容只有点进详情页才能看到。</p>
@@ -708,11 +715,11 @@ hexo list <type></code></pre>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/85037427">Hexo系列 | Hexo的基本使用</a></p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/20641764">“知识共享”（CC协议）简单介绍</a></p>
 
-                
-            </div>
-            <hr/>
+                                    
+                            </div>
+                            <hr />
 
-            
+                            
 
     <div class="reprint" id="reprint-statement">
         
@@ -766,20 +773,23 @@ hexo list <type></code></pre>
 
 
 
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
-                            
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
-                                </a>
-                            
-                        </div>
-                    
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+                                <div class="tag_share" style="display: block;">
+                                    <div class="post-meta__tag-list" style="display: inline-block;">
+                                        
+                                            <div class="article-tag">
+                                                
+                                                    <a href="/tags/hexo/">
+                                                        <span class="chip bg-color">
+                                                            hexo
+                                                        </span>
+                                                    </a>
+                                                    
+                                            </div>
+                                            
+                                    </div>
+                                    <div class="post_share"
+                                        style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                                        <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
@@ -791,22 +801,22 @@ hexo list <type></code></pre>
 
 </div>
 
-                </div>
-            </div>
-            
-        </div>
+                                    </div>
+                                </div>
+                                
+                        </div>
     </div>
 
     
 
-    
+                
 
-    
+                            
 
-    
+                                        
 
-    
-        <style>
+                                                    
+                                                        <style>
     .valine-card {
         margin: 1.5rem auto;
     }
@@ -1078,13 +1088,13 @@ hexo list <type></code></pre>
         placeholder: 'just go go'
     });
 </script>
-    
+                                                            
 
-    
+                                                                
 
-    
+                                                                            
 
-    
+                                                                                        
 
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
@@ -1229,24 +1239,27 @@ hexo list <type></code></pre>
 
 
 
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+        <!-- 代码块功能依赖 -->
+        <script type="text/javascript"
+            src="/libs/codeBlock/codeBlockFuction.js"></script>
 
-<!-- 代码语言 -->
+        <!-- 代码语言 -->
+        
+            <script type="text/javascript"
+                src="/libs/codeBlock/codeLang.js"></script>
+            
 
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+                <!-- 代码块复制 -->
+                
+                    <script type="text/javascript"
+                        src="/libs/codeBlock/codeCopy.js"></script>
+                    
 
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
+                        <!-- 代码块收缩 -->
+                        
+                            <script type="text/javascript"
+                                src="/libs/codeBlock/codeShrink.js"></script>
+                            
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
