@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo基本使用, Ian&#39;s blog">
+    <meta name="keywords" content="clash使用, Ian&#39;s blog">
     <meta name="description" content="少搞样式，多写博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo基本使用 | Ian&#39;s blog</title>
+    <title>clash使用 | Ian&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -294,12 +294,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo基本使用</h1>
+                    <h1 class="description center-align post-title">clash使用</h1>
                 </div>
             </div>
         </div>
@@ -415,9 +415,9 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo/">
+                                <a href="/tags/clash/">
                                     <span class="chip bg-color">
-                                        hexo
+                                        clash
                                     </span>
                                 </a>
                                 
@@ -443,7 +443,7 @@
                     <div class="post-date info-break-policy">
                         <i class="far fa-calendar-minus fa-fw"></i>
                         发布日期:&nbsp;&nbsp;
-                            2021-12-09
+                            2022-11-03
                     </div>
                     
 
@@ -453,7 +453,7 @@
                                     <div class="info-break-policy">
                                         <i class="far fa-file-word fa-fw"></i>
                                         文章字数:&nbsp;&nbsp;
-                                            1.2k
+                                            394
                                     </div>
                                     
 
@@ -461,7 +461,7 @@
                                             <div class="info-break-policy">
                                                 <i class="far fa-clock fa-fw"></i>
                                                 阅读时长:&nbsp;&nbsp;
-                                                    4
+                                                    1
                                                         分
                                             </div>
                                             
@@ -477,242 +477,40 @@
 
                         <div class="card-content article-card-content">
                             <div id="articleContent">
-                                <p>hexo本质上是将markdown文件通过一系列规则渲染成HTML网页格式并发布到远端服务器的集成工具</p>
-<h2 id="符号解释"><a href="#符号解释" class="headerlink" title="符号解释"></a>符号解释</h2><p><code>[a]</code>表示<code>a</code>是可以缺省的，此时会以默认值代替</p>
-<p><code>&lt;b&gt;</code>表示该位置是可变的，<code>b</code>是该部分应填的内容名称，不可缺省</p>
-<h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><h3 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h3><pre class=" language-shell"><code class="language-shell"># 简写
-hexo n [layout] <_title># 这里加下划线防止被误认成HTML标签
-# 全写
-hexo new [layout] <_title>
-# 示例
-# 此命令会在_post文件夹新建一个me.md
-hexo n "me"
-</code></pre>
-<p>该命令会以<code>layout</code>布局新建一个名为<code>title</code>的 文章，如果<code>layout</code>缺省，默认为<code>post</code>。标题的引号不是必须的，如果标题包含空格，则必须用引号括起来。</p>
-<p><code>layout</code>包含三种默认布局(post, page, draft)和自定义布局，三种默认布局的模板文件都存在<code>scaffolds</code>文件夹中，新建文章时，hexo会按照指定布局模板的文件内容来填充新建的文件。</p>
+                                <h2 id="clash使用"><a href="#clash使用" class="headerlink" title="clash使用"></a>clash使用</h2><ul>
+<li><p><code>General（常规）</code>：</p>
 <ul>
-<li><code>post</code>：在<code>_post</code>文件夹新建文件，作为帖子</li>
-<li><code>page</code>：在<code>source</code>文件夹新建<code>title</code>文件夹，并在该文件夹中新建一个<code>index.md</code>，作为新页面</li>
-<li><code>draft</code>：待补充</li>
+<li><code>Port</code>、<code>Socks Port</code>；分别为 HTTP、SOCKS 代理端口，点击终端图案可以打开一个配置了代理的命令行窗口，点击端口数字可以复制该命令；</li>
+<li><code>Allow LAN</code>：启用局域网共享代理功能；</li>
+<li><code>Log Level</code>：日志等级；</li>
+<li><code>Home Directory</code>：点击下方路径直达 <code>C:\Users\用户名\.config\clash</code> 文件夹；</li>
+<li><code>GeoIP Database</code>：点击下方日期可更新 GeoIP 数据库；</li>
+<li><code>UWP Loopback</code> ：可以用来使 UWP 应用解除回环代理限制；</li>
+<li><code>Tap Device</code> ：安装 cfw-tap 网卡，可用于处理不遵循系统代理的软件（实际启动 tap 模式需要更改配置文件）；</li>
+<li><code>General YML</code>：编辑 <code>config.yml</code> 文件，可用于配置部分 General 页面内容；</li>
+<li><code>Dark Theme</code>：控制暗色模式；</li>
+<li><code>System Proxy</code>：启用系统代理；</li>
+<li><code>Start with Windows</code>：设置开机自启；</li>
 </ul>
-<h3 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h3><table>
-<thead>
-<tr>
-<th>参数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>-p</code>, <code>--path</code></td>
-<td>自定义新建文章的路径</td>
-</tr>
-<tr>
-<td><code>-r</code>, <code>--replace</code></td>
-<td>存在同名文章时替换文件</td>
-</tr>
-<tr>
-<td><code>-s</code>, <code>--slug</code></td>
-<td>文章的Slug，作为新文章的文件名和发布后的 URL</td>
-</tr>
-</tbody></table>
-<pre class=" language-shell"><code class="language-shell"># -p用法
-# 该命令会在source/about下创建一个me.md，同时文章的标题被设为About me
-hexo new page -p about/me "About me"
-</code></pre>
-<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><h3 id="基础用法-1"><a href="#基础用法-1" class="headerlink" title="基础用法"></a>基础用法</h3><pre class=" language-shell"><code class="language-shell"># 简写
-hexo g
-# 全写
-hexo generate
-</code></pre>
-<p>生成静态页面文件，发布博客必需步骤</p>
-<h3 id="选项-1"><a href="#选项-1" class="headerlink" title="选项"></a>选项</h3><table>
-<thead>
-<tr>
-<th>选项</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>-d</code>, <code>--deploy</code></td>
-<td>文件生成后立即部署网站，等价于<code>hexo generate &amp;&amp; hexo deploy </code></td>
-</tr>
-<tr>
-<td><code>-w</code>, <code>--watch</code></td>
-<td>监视文件变动，不等同于<code>hexo s</code></td>
-</tr>
-<tr>
-<td><code>-b</code>, <code>--bail</code></td>
-<td>生成过程中如果发生任何未处理的异常则抛出异常</td>
-</tr>
-<tr>
-<td><code>-f</code>, <code>--force</code></td>
-<td>重新生成页面，基本等价于 <code>hexo clean &amp;&amp; hexo generate</code></td>
-</tr>
-<tr>
-<td><code>-c</code>, <code>--concurrency</code></td>
-<td>最大同时生成文件的数量，默认无限制</td>
-</tr>
-</tbody></table>
-<h2 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h2><pre class=" language-shell"><code class="language-shell">hexo publish [layout] <filename>
-</code></pre>
-<p>发表草稿，还没用过</p>
-<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><h3 id="基础用法-2"><a href="#基础用法-2" class="headerlink" title="基础用法"></a>基础用法</h3><pre class=" language-shell"><code class="language-shell"># 简写
-hexo s
-# 全写
-hexo server
-</code></pre>
-<p>启动服务器进行本地预览。默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
-<p>最常用命令，其实可以在不进行<code>hexo g</code>的情况下使用，可以动态监视改动并刷新页面。</p>
-<h3 id="选项-2"><a href="#选项-2" class="headerlink" title="选项"></a>选项</h3><table>
-<thead>
-<tr>
-<th>选项</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>-p</code>, <code>--port</code></td>
-<td>重设访问端口</td>
-</tr>
-<tr>
-<td><code>-s</code>, <code>--static</code></td>
-<td>只使用静态文件</td>
-</tr>
-<tr>
-<td><code>-l</code>, <code>--log</code></td>
-<td>启动log记录修改，使用覆盖记录格式</td>
-</tr>
-</tbody></table>
-<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><h3 id="基础用法-3"><a href="#基础用法-3" class="headerlink" title="基础用法"></a>基础用法</h3><pre class=" language-shell"><code class="language-shell"># 简写
-hexo d
-# 全写
-hexo deploy
-</code></pre>
-<p>将页面部署到远程网站，发布博客必需步骤</p>
-<h3 id="选项-3"><a href="#选项-3" class="headerlink" title="选项"></a>选项</h3><table>
-<thead>
-<tr>
-<th>参数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>-g</code>, <code>--generate</code></td>
-<td>部署之前先生成静态文件，等价于<code>hexo generate &amp;&amp; hexo deploy </code></td>
-</tr>
-</tbody></table>
-<h2 id="render"><a href="#render" class="headerlink" title="render"></a>render</h2><p>没用过，以后再说</p>
-<h2 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h2><p>没用过，以后再说</p>
-<h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><pre class=" language-shell"><code class="language-shell"># 简写
-hexo cl
-# 全写
-hexo clean
-</code></pre>
-<p>清除缓存文件，删除<code>public</code>文件夹</p>
-<p>总之发现更改不生效先试试<code>hexo clean</code>和删除浏览器缓存，还不行就删了<code>deploy.git</code>文件夹。以及发布是有延迟的，有时候等一会就好了。</p>
-<h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><pre class=" language-shell"><code class="language-shell"># 简写
-hexo l <type>
-# 全写
-hexo list <type>
-</code></pre>
-<p>列出网站资料，其中<code>&lt;type&gt;</code>可以是 <code>page</code>,<code> post</code>, <code>route</code>, <code>tag</code>, <code>category</code></p>
-<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>在点进详情页前的预览界面会显示固定长度的字符，使用<code>&lt;!-- more --&gt;</code>来界定摘要和正文</p>
-<p><code>&lt;!-- more --&gt;</code>前的正文内容会在首页看到，其后的内容只有点进详情页才能看到。</p>
-<p>也可以通过Front-matter中的summary字段设置</p>
-<h2 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h2><p>每篇博客的头部配置选项</p>
-<p>此处为matery主题支持的配置</p>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>默认</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>title</td>
-<td>md文件名</td>
-<td>帖子标题，必填项</td>
-</tr>
-<tr>
-<td>date</td>
-<td>文章创建时间</td>
-<td>帖子发布时间，必填项，尽量确保每篇帖子都不一样</td>
-</tr>
-<tr>
-<td>author</td>
-<td>根目录中的<code>_config.yml</code>里面的author字段</td>
-<td>帖子作者，每篇文章都可以单独设置</td>
-</tr>
-<tr>
-<td>img</td>
-<td><code>featureImages</code>中的一个值</td>
-<td>似乎是指定封面页</td>
-</tr>
-<tr>
-<td>top</td>
-<td><code>true</code></td>
-<td>置顶推荐位</td>
-</tr>
-<tr>
-<td>hide</td>
-<td><code>false</code></td>
-<td>是否在主页显示，<code>true</code>则不显示</td>
-</tr>
-<tr>
-<td>cover</td>
-<td><code>false</code></td>
-<td>该帖子是否被加入主页轮播封面</td>
-</tr>
-<tr>
-<td>coverImg</td>
-<td>null</td>
-<td>上面属性用到的图片URL</td>
-</tr>
-<tr>
-<td>password</td>
-<td>null</td>
-<td>如果在主题配置文件中设置了加密选项，可以在这里设置密码，使用<code>SHA256</code>加密。</td>
-</tr>
-<tr>
-<td>toc</td>
-<td><code>true</code></td>
-<td>是否开启目录</td>
-</tr>
-<tr>
-<td>mathjax</td>
-<td><code>false</code></td>
-<td>是否开启数学公式渲染，需要在主题配置文件打开相应配置</td>
-</tr>
-<tr>
-<td>summary</td>
-<td>null</td>
-<td>帖子摘要，不开启则在正文选取</td>
-</tr>
-<tr>
-<td>categories</td>
-<td>null</td>
-<td>帖子分类，一篇文章建议只有一个类别</td>
-</tr>
-<tr>
-<td>tags</td>
-<td>null</td>
-<td>帖子标签，一篇文章可以有多个标签</td>
-</tr>
-<tr>
-<td>keywords</td>
-<td>Post Title</td>
-<td>帖子关键字</td>
-</tr>
-<tr>
-<td>reprintPolicy</td>
-<td>cc_by</td>
-<td>知识共享协议，可以是以下之一 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint and pay</td>
-</tr>
-</tbody></table>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands.html">指令 | Hexo</a></p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/85037427">Hexo系列 | Hexo的基本使用</a></p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/20641764">“知识共享”（CC协议）简单介绍</a></p>
+</li>
+<li><p><code>Proxies（代理）</code>：选择代理方式（Global – 全局、Rule – 规则、Direct – 直连）及策略组节点选择；</p>
+</li>
+<li><p><code>Profiles（配置管理）</code>：</p>
+<ul>
+<li>用来下载远端配置文件和创建本地副本，且可在多个配置文件间切换；</li>
+<li>对配置进行节点、策略组和规则的管理（添加节点、策略组和规则在各自编辑界面选择 <code>Add</code>, 调整策略组顺序、节点顺序及策略组节点使用拖拽的方式）；</li>
+</ul>
+</li>
+<li><p><code>Logs（日志）</code>：显示当前请求命中规则类型和策略；</p>
+</li>
+<li><p><code>Connections (连接)</code>: 显示当前的 TCP 连接，可对某个具体连接执行关闭操作；</p>
+</li>
+<li><p><code>Settings（设置）</code>：软件详细设置；</p>
+</li>
+<li><p><code>Feedback（反馈）</code>：显示软件、作者相关信息。</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ianorz/blog_img/main/image-20221224105828222.png"></p>
 
                                     
                             </div>
@@ -729,7 +527,7 @@ hexo list <type>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">勤奋写博客的Ian</a>
+                    <a href="/about" rel="external nofollow noreferrer">翻墙看世界的Ian</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -739,7 +537,7 @@ hexo list <type>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://ianorz.github.io/2021/12/09/hexo-ming-ling/">http://ianorz.github.io/2021/12/09/hexo-ming-ling/</a>
+                    <a href="http://ianorz.github.io/2022/11/03/clash-shi-yong/">http://ianorz.github.io/2022/11/03/clash-shi-yong/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -752,7 +550,7 @@ hexo list <type>
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">勤奋写博客的Ian</a>
+                    <a href="/about" target="_blank">翻墙看世界的Ian</a>
                     !
                 </span>
             </div>
@@ -777,9 +575,9 @@ hexo list <type>
                                         
                                             <div class="article-tag">
                                                 
-                                                    <a href="/tags/hexo/">
+                                                    <a href="/tags/clash/">
                                                         <span class="chip bg-color">
-                                                            hexo
+                                                            clash
                                                         </span>
                                                     </a>
                                                     
@@ -1098,9 +896,59 @@ hexo list <type>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/11/03/clash-shi-yong/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="clash使用">
+                        
+                        <span class="card-title">clash使用</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            记录一下
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%80%BB%E7%BB%93/" class="post-category">
+                                    总结
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/clash/">
+                        <span class="chip bg-color">clash</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/10/01/hui-bian-yu-yan-shi-jin-zhi-zhuan-16-jin-zhi/">
                     <div class="card-image">
@@ -1117,61 +965,8 @@ hexo list <type>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-10-01
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
-                                    编程
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Programing/">
-                        <span class="chip bg-color">Programing</span>
-                    </a>
-                    
-                    <a href="/tags/Assembly/">
-                        <span class="chip bg-color">Assembly</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/12/08/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Hello World!!!!!!!!
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-01
                             </span>
                         <span class="publish-author">
                             
@@ -1190,38 +985,6 @@ hexo list <type>
                     
                     <a href="/tags/Programing/">
                         <span class="chip bg-color">Programing</span>
-                    </a>
-                    
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C++</span>
-                    </a>
-                    
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
-                    </a>
-                    
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
-                    </a>
-                    
-                    <a href="/tags/PHP/">
-                        <span class="chip bg-color">PHP</span>
-                    </a>
-                    
-                    <a href="/tags/SQL/">
-                        <span class="chip bg-color">SQL</span>
-                    </a>
-                    
-                    <a href="/tags/MATLAB/">
-                        <span class="chip bg-color">MATLAB</span>
-                    </a>
-                    
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C</span>
-                    </a>
-                    
-                    <a href="/tags/HTML/">
-                        <span class="chip bg-color">HTML</span>
                     </a>
                     
                     <a href="/tags/Assembly/">
